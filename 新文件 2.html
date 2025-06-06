@@ -103,7 +103,7 @@
         return;
       }
 
-      const apiUrl = `http://api.aviationstack.com/v1/flights?access_key=${apiKey}&limit=100&dep_iata=${depCity}`;
+	  const apiUrl = `https://cors-anywhere.herokuapp.com/http://api.aviationstack.com/v1/flights?access_key=${apiKey}&limit=100&dep_iata=${depCity}`;
 
       fetch(apiUrl)
         .then(response => response.json())
